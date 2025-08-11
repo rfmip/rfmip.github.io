@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
+  },{id: "nav-news",
+          title: "news",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/news/";
           },
         },{id: "nav-publications",
           title: "publications",
@@ -398,14 +398,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-sign-up-to-the-rfmip-listserv-group-for-updates",
+            },},{id: "news-sign-up-to-the-rfmip-listserv-group-for-updates",
           title: 'Sign up to the RFMIP listserv/group for updates',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
+            },},{id: "news-rfmip-session-at-the-cmip6-community-workshop-march-2026-japan",
+          title: 'RFMIP Session at the CMIP6 Community Workshop, March 2026 Japan.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
