@@ -7,11 +7,11 @@ subtitle:
 profile:
   align: right
   image: rfmip_logo.png
-  image_width: 300px
   image_circular: false # crops the image to make it circular
   more_info: >
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+
 social: false # includes social icons at the bottom of the page
 
 announcements:
@@ -28,3 +28,10 @@ latest_posts:
 The Radiative Forcing Model Intercomparison Project (RFMIP) is a model intercomparison project designed to diagnose effective radiative forcing and evaluate its uncertainty in Global Climate Models.
 
 As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second iteration of the Radiative Forcing Model Intercomparison Project (RFMIP2.0) will launch shortly. Please stay tuned for further annoucements.
+
+Co-chairs:
+
+Ryan Kramer | GFDL, NOAA, USA.
+Chris Smith | Vrije Universiteit Brussel, Belgium & IIASA, Laxenburg, Austria.
+Tim Andrews | Met Office Hadley Centre, UK & University of Leeds, UK.
+
