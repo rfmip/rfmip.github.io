@@ -19,13 +19,11 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-A change in the composition of the climate system, stemming from natural or anthropogenic activities, can induce a perturbation to the Earth’s radiative energy budget known as a radiative forcing. The characteristics of this forcing, such as its global-mean magnitude and spatial pattern, determine the subsequent climate response.
+The Radiative Forcing Model Intercomparison Project (RFMIP) is a model intercomparison project designed to diagnose effective radiative forcing and evaluate its uncertainty in Global Climate Models.
 
-RFMIP is a model intercomparison project designed to diagnose radiative forcing and evaluate its uncertainty in Global Climate Models.
-
-As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second iteration of the Radiative Forcing Model Intercomparison Project (RFMIP2.0) will enable the systematic characterization of effective radiative forcing and its components across state-of-the-art climate models, through a set of fixed-Sea Surface Temperature timeslice and transient experiments. The protocol for RFMIP2.0 will be presented here shortly.
+As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second iteration of the Radiative Forcing Model Intercomparison Project (RFMIP2.0) will launch shortly. Please stay tuned for further annoucements.
