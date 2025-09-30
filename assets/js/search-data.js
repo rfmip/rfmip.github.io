@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
+        },{id: "nav-protocol",
+          title: "protocol",
+          description: "Details of the RFMIP2.0 Protocol.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/protocol/";
           },
         },{id: "post-a-post-with-plotly-js",
         
