@@ -5,7 +5,7 @@ permalink: /protocol/
 description: Details of the RFMIP2.0 Protocol.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Under Construction]
 horizontal: false
 ---
 
