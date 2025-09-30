@@ -408,6 +408,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
+            },},{id: "news-preprint-of-rfmip2-0-protocol-paper-at-gmd-and-open-for-discussion",
+          title: 'Preprint of RFMIP2.0 Protocol Paper at GMD and Open for Discussion',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
