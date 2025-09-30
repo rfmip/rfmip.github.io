@@ -7,5 +7,5 @@ related_posts: false
 ---
 
 Learn all about plans for RFMIP2.0 for CMIP7 in a preprint of the Protocol paper, now open for discussion at Geoscientific Model Development (GMD) .  Comments welcome! 
-https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4378/
+<https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4378/>
 
