@@ -34,6 +34,7 @@ As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second
 3. What is the influence of the underlying climate state on radiative forcing?
 4. To what extent is radiative forcing separable from radiative feedbacks when considering land processes?
 
+
 Co-chairs:
 
 Ryan Kramer | GFDL, NOAA, USA.
