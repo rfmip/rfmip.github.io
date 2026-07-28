@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title of Your Announcement"
+title: RFMIP2.0 Protocol Published in GMD
 date: 2026-05-26 12:00:00-0400
 inline: true
 related_posts: false
