@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Title of Your Announcement"
-date: 2026-03-30 12:00:00-0400
+date: 2026-05-26 12:00:00-0400
 inline: true
 related_posts: false
 ---
