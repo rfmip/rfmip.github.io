@@ -150,6 +150,9 @@ collections:
     output: true
   projects:
     output: true
+  protocol:
+    output: true
+    permalink: /:collection/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
