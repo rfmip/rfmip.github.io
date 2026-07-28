@@ -413,7 +413,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{
+            },},{id: "news-final-version-of-the-rfmip2-0-protocol-paper-has-now-been-published-in-geoscientific-model-development-gmd-https-gmd-copernicus-org-articles-19-4447-2026",
+          title: 'Final version of the RFMIP2.0 Protocol Paper has now been published in Geoscientific...',
+          description: "",
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
