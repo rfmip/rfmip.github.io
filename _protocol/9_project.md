@@ -37,7 +37,7 @@ The table below summarizes the fixed-SST time-slice experiments used to diagnose
 | :---: | :--- | :--- | :--- | :---: |
 | **DECK/Tier 1** | `piClim-control` | Baseline pre-industrial atmospheric state | Climatological 1850 SSTs | 30 Years |
 | **DECK/Tier 1** | `piClim-4xCO2` | Abrupt $4 \times \text{CO}_2$ concentration increase | Climatological 1850 SSTs | 30 Years |
-| **DECK/Tier 2** | `piClim-anthro` | All present-day (2021) anthropogenic forcings combined | Climatological 1850 SSTs | 30 Years |
+| **DECK/Tier 1** | `piClim-anthro` | All present-day (2021) anthropogenic forcings combined | Climatological 1850 SSTs | 30 Years |
 | **AFT/Tier 1** | `piClim-aer` | Anthropogenic aerosols at present-day (2021) levels | Climatological 1850 SSTs | 30 Years |
 | **Tier 1** | `piClim-ghg` | Well-mixed greenhouse gases at present-day (2021) levels | Climatological 1850 SSTs | 30 Years |
 | **Tier 1** | `piClim-lu` | Present-day (2021) land use / land cover changes | Climatological 1850 SSTs | 30 Years |
@@ -54,4 +54,4 @@ The table below summarizes the fixed-SST time-slice experiments used to diagnose
 | **AFT/Tier 2** | `piClim-histghg` | Time-varying ERF from non-ozone (well-mixed) greenhouse gases | 1850 | 2100 | Diagnose transient ERF from non-ozone greenhouse gases |
 
 
-**UNDER CONSTRUCTION. More to come.  See full Protocol: <https://gmd.copernicus.org/articles/19/4447/2026/>
+**UNDER CONSTRUCTION. More to come.  See full Protocol: <https://gmd.copernicus.org/articles/19/4447/2026/> **
