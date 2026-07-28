@@ -418,6 +418,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_4/";
+            },},{id: "protocol-rfmip2-0-protocol",
+          title: 'RFMIP2.0 Protocol',
+          description: "Details of the RFMIP2.0 Protocol",
+          section: "Protocol",handler: () => {
+              window.location.href = "/protocol/";
             },},{
         id: 'social-email',
         title: 'email',
