@@ -28,6 +28,8 @@ As noted in the tables below, three legacy RFMIP experiments are now part of the
 
 ### Table 1: Fixed-SST 30yr Time-Slice Simulations
 
+<div style="font-size: 0.85em;">
+  
 | Tier | Experiment ID | Description / Forcing | SST / Sea Ice Condition | Minimum Length |
 | :---: | :--- | :--- | :--- | :---: |
 | Tier 1/DECK | `piClim-control` | Baseline pre-industrial atmospheric state | Climatological 1850 SSTs | 30 Years |
@@ -37,6 +39,7 @@ As noted in the tables below, three legacy RFMIP experiments are now part of the
 | Tier 1 | `piClim-ghg` | Well-mixed greenhouse gases at present-day (2021) levels | Climatological 1850 SSTs | 30 Years |
 | Tier 1 | `piClim-lu` | Present-day (2021) land use / land cover changes | Climatological 1850 SSTs | 30 Years |
 
+</div>
 ---
 
 &nbsp;
@@ -44,6 +47,8 @@ As noted in the tables below, three legacy RFMIP experiments are now part of the
 
 ### Table 2: Fixed-SST Transient Simulations - Historical (1850–2021) / scen7-mc Medium Concentration Scenario (2022–2100) 
 
+<div style="font-size: 0.85em;">
+  
 | Tier | Experiment Title | Experiment Description | Start | End | Major Purposes |
 | :--- | :--- | :--- | :---: | :---: | :--- |
 | Tier 1/AFT | `piClim-histall` | Time-varying forcing from all agents | 1850 | 2100 | Diagnose transient ERF from all agents |
@@ -51,6 +56,7 @@ As noted in the tables below, three legacy RFMIP experiments are now part of the
 | Tier 2/AFT | `piClim-histnat` | Time-varying ERF from volcanoes, solar (including spectral) variability, etc. | 1850 | 2100 | Diagnose transient natural ERF |
 | Tier 2/AFT | `piClim-histghg` | Time-varying ERF from non-ozone (well-mixed) greenhouse gases | 1850 | 2100 | Diagnose transient ERF from non-ozone greenhouse gases |
 
+</div>
 ---
 
 ## 2. Tier 3 RFMIP2.0 Experiments
@@ -59,18 +65,23 @@ Tier 3 consists of new fixed-SST time-slice experiments to study the linearity o
 
 ## Table 3: Fixed-SST Time-Slice Experiments with +4K Warmert SSTs
 
+<div style="font-size: 0.85em;">
+  
 | Tier | Experiment ID | Description / Forcing | SST / Sea Ice Condition | Minimum Length |
 | :---: | :--- | :--- | :--- | :---: |
 | Tier 3 | `piClim-p4K` | Pre-industrial (1850) conditions but with sea surface temperatures uniformly 4 K warmer | Uniformly 4 K warmer than pre-industrial | 30 Years |
 | Tier 3  | `piClim-p4K-4xCO2` | CO2 concentrations set to 4 times pre-industrial with sea surface temperatures uniformly 4 K warmer than pre-industrial | Uniformly 4 K warmer than pre-industrial | 30 Years |
 | Tier 3 | `piClim-p4K-aer` | Present day (2021) aerosols with sea surface temperatures uniformly 4 K warmer than pre-industrial | Uniformly 4 K warmer than pre-industrial | 30 Years |
 
+</div>
 --
 &nbsp;
 &nbsp;
 
 ## Table 4: Additional Perturbed Carbon Dioxide Fixed-SST Time-Slice Experiments
 
+<div style="font-size: 0.85em;">
+  
 | Tier | Experiment ID | Description / Forcing | SST / Sea Ice Condition | Minimum Length |
 | :---: | :--- | :--- | :--- | :---: |
 | Tier 3 | `piClim-0.5xCO2` | CO2 concentrations set to half of pre-industrial | Climatological 1850 SSTs | 30 Years |
@@ -78,12 +89,15 @@ Tier 3 consists of new fixed-SST time-slice experiments to study the linearity o
 | Tier 3 | `piClim-4xCO2-bgc` | CO2 concentrations set to 4 times pre-industrial applied only to carbon cycle | Climatological 1850 SSTs | 30 Years |
 | Tier 3 | `piClim-4xCO2-rad` | CO2 concentrations set to 4 times pre-industrial applied only to radiation | Climatological 1850 SSTs | 30 Years |
 
+</div>
 --
 &nbsp;
 &nbsp;
 
 ## Table 5: Fixed-SST + Fixed-Land Surface Temperature Time-Slice Experiments
 
+<div style="font-size: 0.85em;">
+  
 | Tier | Experiment ID | Description / Forcing | SST / Sea Ice Condition | Minimum Length |
 | :---: | :--- | :--- | :--- | :---: |
 | Tier 3 | `piClim-FixedLST` | Pre-industrial (1850) conditions with land-surface temperatures fixed from `piClim-control` | Climatological 1850 SSTs (Fixed LST) | 30 Years |
@@ -93,4 +107,9 @@ Tier 3 consists of new fixed-SST time-slice experiments to study the linearity o
 | Tier 3 | `piClim-FixedLST-ghg` | Present-day (2021) well-mixed greenhouse gases only (non-ozone) with land surface temperatures fixed at pre-industrial | Climatological 1850 SSTs (Fixed LST) | 30 Years |
 | Tier 3 | `piClim-FixedLST-lu` | Present-day (2021) land use with land surface temperatures fixed at pre-industrial | Climatological 1850 SSTs (Fixed LST) | 30 Years |
 
-See full protocol details in [Kramer et al., 2026](https://gmd.copernicus.org/articles/19/4447/2026/) and
+</div>
+--
+
+&nbsp;
+
+See full protocol details in [Kramer et al., 2026](https://gmd.copernicus.org/articles/19/4447/2026/)
