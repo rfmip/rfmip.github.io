@@ -22,9 +22,10 @@ latest_posts:
 
 <div class="rfmip-hero">
   <div class="container">
-    <div class="rfmip-hero-eyebrow">CMIP7 Model Intercomparison Project</div>
-    <h1>Diagnosing effective radiative forcing across Earth system models.</h1>
-    <p>RFMIP2.0 is a coordinated set of fixed sea-surface-temperature experiments for CMIP7 — designed to isolate radiative forcing from the feedbacks that obscure it, across the full model ensemble.</p>
+    <div class="rfmip-hero-eyebrow">Radiative Forcing Model Intercomparison Project</div>
+    <h1>Radiative Forcing Model Intercomparison Project</h1>
+    <p>The Radiative Forcing Model Intercomparison Project (RFMIP) is a model intercomparison project designed to diagnose effective radiative forcing and evaluate its uncertainty in Global Climate Models.</p>
+
     <div class="rfmip-hero-actions">
       <a class="rfmip-btn-primary" href="{{ '/protocol/' | relative_url }}">Read the protocol →</a>
       <a class="rfmip-btn-secondary" href="{{ '/publications/' | relative_url }}">Browse publications</a>
@@ -34,8 +35,6 @@ latest_posts:
     </div>
   </div>
 </div>
-
-**The Radiative Forcing Model Intercomparison Project (RFMIP)** is a model intercomparison project designed to diagnose effective radiative forcing and evaluate its uncertainty in Global Climate Models.
 
 As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second iteration of the Radiative Forcing Model Intercomparison Project (RFMIP2.0) consists of a series of fixed-Sea Surface Temperature simulations aimed at addressing the following questions:
 
@@ -84,7 +83,7 @@ As part of the Coupled Model Intercomparison Project phase 7 (CMIP7), the second
     <div class="rfmip-cochair-avatar" style="background: var(--rfmip-teal);">CS</div>
     <div>
       <div class="rfmip-cochair-name">Chris Smith</div>
-      <div class="rfmip-cochair-affiliation">Vrije Universiteit Brussel, Belgium &amp; IIASA, Laxenburg, Austria</div>
+      <div class="rfmip-cochair-affiliation">IIASA, Austria</div>
     </div>
   </div>
   <div class="rfmip-cochair">
