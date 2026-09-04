@@ -104,7 +104,7 @@ an example with the `profile.image` field).
 ## Getting help
 
 For anything not covered here — site-wide settings, the visual theme,
-navigation structure — see [`CUSTOMIZE.md`](CUSTOMIZE.md) and
-[`FAQ.md`](FAQ.md), which document the underlying
-[al-folio](https://github.com/alshedivat/al-folio) template this site is
-built on. Otherwise, ask Chris.
+navigation structure — see the upstream
+[al-folio documentation](https://github.com/alshedivat/al-folio); we
+removed our local copies of the template's own docs. Otherwise, ask
+Chris.
