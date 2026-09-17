@@ -1,0 +1,636 @@
+/*******************************************************************************
+ * RFMIP2.0 design refresh
+ * Ported from the "RFMIP Website Mockup" design canvas (Aug 2026): dark navy
+ * hero, a recurring blue -> sky -> teal -> gold gradient divider (a nod at
+ * the radiative spectrum), and a Newsreader / Public Sans type pairing.
+ ******************************************************************************/
+
+// Sitewide type pairing
+body {
+  font-family: var(--rfmip-font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title {
+  font-family: var(--rfmip-font-serif);
+  font-weight: 500;
+}
+
+// Recurring gradient divider bar
+.rfmip-divider {
+  width: 100%;
+  height: 4px;
+  background: var(--rfmip-gradient);
+}
+
+// Full-bleed hero for the About/home page. `clear: both` keeps it below the
+// floated profile photo instead of trying to wrap beside it.
+.rfmip-hero {
+  position: relative;
+  clear: both;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 88px 0 56px;
+  margin-bottom: 2.5rem;
+  background: radial-gradient(120% 140% at 15% 0%, #123e4d 0%, var(--rfmip-navy) 46%, var(--rfmip-navy-deep) 100%);
+  color: #fff;
+}
+
+// Hero content aligns to the same column as the body text below it (the
+// site's standard `.container`, not the hero band's own full-bleed width).
+.rfmip-hero > .container {
+  position: relative;
+}
+
+.rfmip-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 4px;
+  background: var(--rfmip-gradient);
+}
+
+.rfmip-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--rfmip-font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8fd6d6;
+  margin-bottom: 20px;
+}
+
+.rfmip-hero-eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rfmip-gold);
+  display: inline-block;
+}
+
+.rfmip-hero h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.12;
+  margin: 0 0 20px;
+  max-width: 760px;
+}
+
+.rfmip-hero p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 0 28px;
+}
+
+.rfmip-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rfmip-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--rfmip-gold);
+  color: var(--rfmip-navy-deep);
+  font-family: var(--rfmip-font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 7px;
+}
+
+.rfmip-btn-secondary {
+  font-family: var(--rfmip-font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 12px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.rfmip-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.rfmip-hero-meta::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+.rfmip-hero-meta a {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.rfmip-hero-meta a:hover {
+  color: #fff;
+}
+
+// `em`/`strong`/etc. have an explicit global text color (_base.scss) that
+// otherwise wins over inheriting this link's light color on the dark band.
+.rfmip-hero-meta a em {
+  color: inherit;
+}
+
+// Gradient page-header banner, applied to every `layout: page` page
+// (protocol / publications / news / 404) via the `page-banner` wrapper class.
+.page-banner .post-header {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: linear-gradient(120deg, var(--rfmip-teal-deep), #0d4453);
+  padding: 64px 0 48px;
+  margin-bottom: 2.5rem;
+}
+
+// The title/description align to the same column as the body text below
+// (the site's standard `.container`), not the banner's own full-bleed width.
+.page-banner .post-header > .container {
+  position: relative;
+}
+
+.page-banner .post-header .container::before {
+  content: "RFMIP2.0 FOR CMIP7";
+  display: block;
+  font-family: var(--rfmip-font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8fd6d6;
+  margin-bottom: 14px;
+}
+
+.page-banner .post-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 4px;
+  background: var(--rfmip-gradient);
+}
+
+.page-banner .post-title {
+  color: #fff;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.page-banner .post-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+}
+
+// Protocol tables + tier badges (ported verbatim from the mockup)
+.rfmip-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 28px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+}
+
+.rfmip-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  min-width: 720px;
+}
+
+.rfmip-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  white-space: nowrap;
+}
+
+.rfmip-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.rfmip-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rfmip-table td.exp-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  color: var(--rfmip-blue-deep);
+  white-space: nowrap;
+}
+
+.rfmip-table td.desc {
+  color: var(--global-text-color);
+  min-width: 220px;
+}
+
+.tier-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.tier-1 {
+  background: var(--rfmip-blue-deep);
+  color: #fff;
+}
+
+.tier-2 {
+  background: var(--rfmip-teal-deep);
+  color: #fff;
+}
+
+.tier-3 {
+  background: var(--rfmip-gold);
+  color: var(--rfmip-navy-deep);
+}
+
+.table-caption {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin: 0 0 12px;
+}
+
+.table-caption span {
+  font-weight: 500;
+  color: var(--global-text-color-light);
+}
+
+// Numbered "four questions" cards (About page)
+.rfmip-q-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 1.5rem 0 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .rfmip-q-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rfmip-q {
+  display: flex;
+  gap: 20px;
+}
+
+.rfmip-q-num {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(16, 120, 208, 0.1);
+  color: var(--rfmip-blue-deep);
+  font-family: var(--rfmip-font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rfmip-q h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.rfmip-q p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+// Co-chair avatar row (About page)
+.rfmip-cochairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  margin: 1.5rem 0 2rem;
+}
+
+.rfmip-cochair {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rfmip-cochair-avatar {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: var(--rfmip-font-serif);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.rfmip-cochair-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.rfmip-cochair-affiliation {
+  font-size: 13.5px;
+  color: var(--global-text-color-light);
+  line-height: 1.4;
+}
+
+// Nav brand mark (icon + wordmark + version badge), ported from the mockup.
+// Deliberately NOT widening `.navbar .container` beyond the site's normal
+// `.container` max-width — the nav, hero, page-banners, content, and footer
+// all share that one width so their left/right edges line up on every page.
+.navbar .container {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.rfmip-brand {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.rfmip-brand-icon {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+.rfmip-brand-word {
+  font-family: var(--rfmip-font-serif);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: var(--global-text-color);
+}
+
+.rfmip-brand-badge {
+  font-family: var(--rfmip-font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--rfmip-teal-deep);
+  background: var(--global-card-bg-color);
+  border-radius: 3px;
+  padding: 2px 6px;
+  letter-spacing: 0.02em;
+}
+
+// Gold underline on the active nav link, in place of the theme default
+.navbar .navbar-nav .nav-item.active > .nav-link {
+  border-bottom: 2px solid var(--rfmip-gold);
+}
+
+.rfmip-nav-cta {
+  display: flex;
+  align-items: center;
+}
+
+.rfmip-btn-outline {
+  font-family: var(--rfmip-font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rfmip-blue);
+  border: 1px solid var(--rfmip-blue);
+  border-radius: 6px;
+  padding: 7px 14px;
+  white-space: nowrap;
+}
+
+.rfmip-btn-outline:hover {
+  color: #fff;
+  background: var(--rfmip-blue);
+}
+
+// Sitewide footer (ported from the mockup): brand/site-links/community grid
+// over a dark teal band, plus a bottom credit bar.
+.rfmip-footer {
+  width: 100%;
+  background: var(--rfmip-footer-bg);
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--rfmip-font-sans);
+}
+
+.rfmip-footer-grid {
+  padding-top: 56px;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 700px) {
+  .rfmip-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.rfmip-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rfmip-footer-brand img {
+  width: 26px;
+  height: auto;
+  display: block;
+}
+
+.rfmip-footer-brand span {
+  font-family: var(--rfmip-font-serif);
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.rfmip-footer p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0;
+  // Can't just `inherit`: the immediate parent is a bare, unstyled `<div>`,
+  // which is itself a casualty of the same sitewide `div { color: ... }`
+  // override, so inheriting from it would still resolve to dark ink.
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.rfmip-footer-heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 16px;
+}
+
+.rfmip-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.rfmip-footer-links a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rfmip-footer-links a:hover {
+  color: #fff;
+}
+
+.rfmip-footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.rfmip-footer-bottom span {
+  // `span` otherwise gets an explicit dark ink color from the sitewide base
+  // styles, which wins over inheriting this footer's light color.
+  color: inherit;
+}
+
+// Publications (jekyll-scholar bibliography), restyled to match the mockup's
+// clean editorial list instead of the theme's default boxed/indented look.
+.publications {
+  margin-top: 0;
+
+  // Each entry is a Bootstrap `.row` with a `.col-sm-2.abbr` reserved for
+  // award/abbreviation badges — unused on this site (it's whitespace, not
+  // truly empty, so `:empty` doesn't match) — pushing the real content over
+  // by a phantom indent column. Drop it and let the entry take full width.
+  .row {
+    .abbr {
+      display: none;
+    }
+
+    .abbr + [class*="col-sm"] {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  h2.bibliography {
+    text-align: left;
+    border-top: none;
+    color: var(--rfmip-teal-deep);
+    font-family: var(--rfmip-font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ol.bibliography li {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .title {
+      font-family: var(--rfmip-font-serif);
+      font-weight: 500;
+      font-size: 19px;
+      margin-bottom: 6px;
+    }
+
+    .author {
+      font-size: 15px;
+      color: var(--global-text-color-light);
+      margin-bottom: 2px;
+    }
+
+    .periodical {
+      font-size: 15px;
+      color: var(--global-text-color-light);
+    }
+
+    .links {
+      margin-top: 10px;
+
+      a.btn {
+        font-family: var(--rfmip-font-sans);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--rfmip-blue);
+        border: none;
+        padding: 0;
+        margin-right: 20px;
+
+        &:hover {
+          color: var(--rfmip-blue-deep);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

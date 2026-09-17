@@ -2,25 +2,12 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
+      <a class="navbar-brand rfmip-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/rfmip_icon.png' | relative_url }}" alt="RFMIP" class="rfmip-brand-icon">
+        <span class="rfmip-brand-word">RFMIP</span>
+        <span class="rfmip-brand-badge">2.0</span>
+      </a>
+      {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
@@ -135,10 +122,14 @@
               </button>
             </li>
           {% endif %}
+          <li class="nav-item rfmip-nav-cta">
+            <a href="https://groups.google.com/g/rfmip" target="_blank" rel="noopener" class="rfmip-btn-outline">Join the list</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="rfmip-divider"></div>
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">

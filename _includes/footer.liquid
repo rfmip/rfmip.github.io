@@ -1,30 +1,41 @@
-{% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
-{% endcapture %}
-
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% else %}
+{% if site.newsletter.enabled %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="container">
-      {{ footer_contents }}
-    </div>
+    {% include newsletter.liquid %}
   </footer>
 {% endif %}
+
+<footer class="rfmip-footer" role="contentinfo">
+  <div class="container rfmip-footer-grid">
+    <div>
+      <div class="rfmip-footer-brand">
+        <img src="{{ '/assets/img/rfmip_icon.png' | relative_url }}" alt="RFMIP">
+        <span>RFMIP2.0</span>
+      </div>
+      <p>Radiative Forcing Model Intercomparison Project — part of CMIP7.</p>
+    </div>
+
+    <div>
+      <div class="rfmip-footer-heading">Site</div>
+      <div class="rfmip-footer-links">
+        <a href="{{ '/' | relative_url }}">About</a>
+        <a href="{{ '/protocol/' | relative_url }}">Protocol</a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/news/' | relative_url }}">News</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="rfmip-footer-heading">Community</div>
+      <div class="rfmip-footer-links">
+        <a href="https://groups.google.com/g/rfmip" target="_blank" rel="noopener">Join the listserv</a>
+        <a href="https://doi.org/10.5194/gmd-19-4447-2026" target="_blank" rel="noopener">Protocol paper (GMD)</a>
+        <a href="https://github.com/rfmip/rfmip.github.io" target="_blank" rel="noopener">GitHub repository</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container rfmip-footer-bottom">
+    <span>Co-chaired by Ryan Kramer, Chris Smith &amp; Tim Andrews</span>
+    <span>Hosted on GitHub Pages &middot; Built with Jekyll</span>
+  </div>
+</footer>
