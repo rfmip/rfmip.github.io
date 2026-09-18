@@ -233,6 +233,7 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
+  compress_css: false # cssminify2 corrupts hsla(0,0%,...) into invalid hsla(0,0,...), dropping white-opacity text (footer, hero) to black on production builds
   exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
